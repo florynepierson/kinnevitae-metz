@@ -231,11 +231,11 @@
     margin-bottom: 1.2rem; background: var(--green-light);
     display: flex; align-items: center; justify-content: center;
   }
-  .team-photo img { width: 100%; height: 100%; object-fit: cover; display: block; opacity: 1; }
+  .team-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .team-photo-placeholder {
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     gap: 0.5rem; width: 100%; height: 100%; min-height: 180px;
-    color: var(--green-dark);
+    color: var(--green-dark); opacity: 0.6;
   }
   .team-photo-placeholder .emoji { font-size: 3rem; }
   .team-photo-placeholder span { font-size: 0.75rem; font-weight: 600; }
@@ -581,7 +581,7 @@
     </div>
   </div>
   <div class="hero-right">
-    <img src="images/hero.jpg" alt="Cabinet KinéVitaé">
+    <img src="images/salut_les_tordus.jpg" alt="Cabinet KinéVitaé">
   </div>
 </section>
 
@@ -590,42 +590,55 @@
   <div class="container">
     <div class="section-header fade-in">
       <span class="section-tag">Nos disciplines</span>
-      <h2>Ce qu'on fait<br>pour v<div class="gallery-grid fade-in">
+      <h2>Ce qu'on fait<br>pour vous<div class="gallery-grid fade-in">
       <div class="gallery-item" onclick="openLightbox(0)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(0)">
-        <img src="images/gallery/table-soin.jpg" alt="Table de soin" loading="lazy">
+        <img src="images/table_soin.jpg" alt="Table de soin" loading="lazy">
         <div class="gallery-overlay"><span>🔍</span></div>
       </div>
-      <div class="gallery-item" onclick="openLightbox(1)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(1)">
-        <img src="images/gallery/salle-exercice-1.jpg" alt="Salle d'exercice" loading="lazy">
+        <div class="gallery-item" onclick="openLightbox(2)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(2)">
+        <img src="images/table_soin1.jpg" alt="Table de soin" loading="lazy">
         <div class="gallery-overlay"><span>🔍</span></div>
       </div>
       <div class="gallery-item" onclick="openLightbox(2)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(2)">
-        <img src="images/gallery/cabine-traitement.jpg" alt="Cabine de traitement" loading="lazy">
+        <img src="images/table_soin2.jpg" alt="Table de soin" loading="lazy">
+        <div class="gallery-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(1)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(1)">
+        <img src="images/salle_exercice.jpg" alt="Salle d'exercice" loading="lazy">
+        <div class="gallery-overlay"><span>🔍</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox(2)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(2)">
+        <img src="images/cabine_traitement.jpg" alt="Cabine de traitement" loading="lazy">
         <div class="gallery-overlay"><span>🔍</span></div>
       </div>
       <div class="gallery-item" onclick="openLightbox(3)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(3)">
-        <img src="images/gallery/salle-bleue.jpg" alt="Salle bleue" loading="lazy">
+        <img src="images/salle_bleue.jpg" alt="Salle bleue" loading="lazy">
         <div class="gallery-overlay"><span>🔍</span></div>
       </div>
       <div class="gallery-item" onclick="openLightbox(4)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(4)">
-        <img src="images/gallery/salle-attente.jpg" alt="Salle d'attente" loading="lazy">
+        <img src="images/salle_attente.jpg" alt="Salle d'attente" loading="lazy">
         <div class="gallery-overlay"><span>🔍</span></div>
       </div>
       <div class="gallery-item" onclick="openLightbox(5)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(5)">
-        <img src="images/gallery/salle-exercice-2.jpg" alt="Salle d'exercice" loading="lazy">
+        <img src="images/machines.jpg" alt="Salle d'exercice" loading="lazy">
         <div class="gallery-overlay"><span>🔍</span></div>
       </div>
       <div class="gallery-item" onclick="openLightbox(6)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(6)">
-        <img src="images/gallery/salle-soin.jpg" alt="Salle de soin" loading="lazy">
+        <img src="images/salle_soin.jpg" alt="Salle de soin" loading="lazy">
         <div class="gallery-overlay"><span>🔍</span></div>
       </div>
       <div class="gallery-item" onclick="openLightbox(7)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(7)">
-        <img src="images/gallery/couloir.jpg" alt="Couloir" loading="lazy">
+        <img src="images/couloir.jpg" alt="Couloir" loading="lazy">
         <div class="gallery-overlay"><span>🔍</span></div>
       </div>
       <div class="gallery-item" onclick="openLightbox(8)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(8)">
-        <img src="images/gallery/facade.jpg" alt="Façade du cabinet" loading="lazy">
+        <img src="images/façade.jpg" alt="Façade du cabinet" loading="lazy">
         <div class="gallery-overlay"><span>🔍</span></div>
+      </div>
+        <div class="gallery-item" onclick="openLightbox(2)" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openLightbox(2)">
+        <img src="images/equipe.jpg" alt="Equipe" loading="lazy">
+        <div class="gallery-overlay"><span>🔍</span></div>
+      </div>
       </div>
     </div>
   </div>
@@ -643,26 +656,36 @@
 
       <div class="team-card fade-in">
         <div class="team-photo">
-          <img src="images/florian.jpg" alt="Florian Breton" loading="lazy">
+            <img src="images/florian.jpg" alt="Florian" loading="lazy">
         </div>
         <div class="team-name">Florian Breton</div>
         <span class="team-role">Ostéopathe</span>
         <div class="team-since">Diplômé depuis 2019</div>
-        <div class="team-specs"><span class="team-spec">Neurosciences douleur</span><span class="team-spec">Ostéo du sport</span><span class="team-spec">Sciatique & névralgies</span></div>
+        <div class="team-specs">
+          <span class="team-spec">Neurosciences douleur</span>
+          <span class="team-spec">Ostéo du sport</span>
+          <span class="team-spec">Sciatique & névralgies</span>
+        </div>
         <div class="team-passions"><span class="team-passion-label">Passions :</span> CrossFit 🏋️ · Musique 🎶 · Burgers 🍔 · Bières 🍺</div>
         <a href="https://www.doctolib.fr/osteopathe/ville/florian-breton?pid=practice-704201" class="team-doctolib" target="_blank">📅 Doctolib</a>
       </div>
+
       <div class="team-card fade-in">
         <div class="team-photo">
-          <img src="images/thomas.jpg" alt="Thomas Matyjasik" loading="lazy">
+          <img src="images/thomas.jpg" alt="thomas" loading="lazy">
         </div>
         <div class="team-name">Thomas Matyjasik</div>
         <span class="team-role">Kinésithérapeute</span>
         <div class="team-since">Diplômé depuis 2009</div>
-        <div class="team-specs"><span class="team-spec">Thérapie manuelle</span><span class="team-spec">Kiné vestibulaire</span><span class="team-spec">Kiné sportive</span></div>
+        <div class="team-specs">
+          <span class="team-spec">Thérapie manuelle</span>
+          <span class="team-spec">Kiné vestibulaire</span>
+          <span class="team-spec">Kiné sportive</span>
+        </div>
         <div class="team-passions"><span class="team-passion-label">Passions :</span> Padel 🎾 · Boxe 🥊 · Vin 🍷 · Voitures 🚙</div>
         <a href="https://www.doctolib.fr/masseur-kinesitherapeute/metz/thomas-matyjasik" class="team-doctolib" target="_blank">📅 Doctolib</a>
       </div>
+
       <div class="team-card fade-in">
         <div class="team-photo">
           <img src="images/alexandra.jpg" alt="Alexandra" loading="lazy">
@@ -670,32 +693,45 @@
         <div class="team-name">Alexandra</div>
         <span class="team-role">Kinésithérapeute</span>
         <div class="team-since">Diplômée depuis 2017</div>
-        <div class="team-specs"><span class="team-spec">Kiné respiratoire</span><span class="team-spec">Épaule</span><span class="team-spec">Vestibulaire</span></div>
+        <div class="team-specs">
+          <span class="team-spec">Kiné respiratoire</span>
+          <span class="team-spec">Épaule</span>
+          <span class="team-spec">Vestibulaire</span>
+        </div>
         <div class="team-passions"><span class="team-passion-label">Passions :</span> Voyage ✈️ · Famille 👨‍👩‍👦 · Fromages 🧀</div>
-        
       </div>
+
       <div class="team-card fade-in">
         <div class="team-photo">
-          <img src="images/maxence.jpg" alt="Maxence Trinkaus" loading="lazy">
+          <img src="images/maxence.jpg" alt="Maxence" loading="lazy">
         </div>
         <div class="team-name">Maxence Trinkaus</div>
         <span class="team-role">Kinésithérapeute</span>
         <div class="team-since">Diplômé depuis 2012</div>
-        <div class="team-specs"><span class="team-spec">Kiné du sport</span><span class="team-spec">Thérapie manuelle</span><span class="team-spec">Drainage lymphatique</span><span class="team-spec">Clinique du coureur</span><span class="team-spec">Rééducation maxillo-faciale</span></div>
+        <div class="team-specs">
+          <span class="team-spec">Kiné du sport</span>
+          <span class="team-spec">Thérapie manuelle</span>
+          <span class="team-spec">Drainage lymphatique</span>
+          <span class="team-spec">Clinique du coureur</span>
+          <span class="team-spec">Rééducation maxillo-faciale</span>
+        </div>
         <div class="team-passions"><span class="team-passion-label">Passions :</span> CrossFit 🏋️ · Judo 🥋 · Bière 🍺 · Pâtes carbo 🍝</div>
         <a href="https://www.doctolib.fr/masseur-kinesitherapeute/metz/maxence-trinkaus" class="team-doctolib" target="_blank">📅 Doctolib</a>
       </div>
+
       <div class="team-card fade-in">
         <div class="team-photo">
-          <img src="images/elysee.jpg" alt="Élysée" loading="lazy">
+          <img src="images/elysée.jpg" alt="Elysée" loading="lazy">
         </div>
         <div class="team-name">Élysée</div>
         <span class="team-role">Kinésithérapeute</span>
         <div class="team-since">Diplômée depuis 2024</div>
-        <div class="team-specs"><span class="team-spec">Cancer du sein</span></div>
+        <div class="team-specs">
+          <span class="team-spec">Cancer du sein</span>
+        </div>
         <div class="team-passions"><span class="team-passion-label">Passions :</span> Voyage 🌍 · Dessin 🎨 · Danse 🩰 · Piano 🎼 · Jeux de société ♟️</div>
-        
       </div>
+
       <div class="team-card fade-in">
         <div class="team-photo">
           <img src="images/julie.jpg" alt="Julie" loading="lazy">
@@ -703,10 +739,14 @@
         <div class="team-name">Julie</div>
         <span class="team-role">Kinésithérapeute</span>
         <div class="team-since">Diplômée depuis 2014</div>
-        <div class="team-specs"><span class="team-spec">Périnée & abdos</span><span class="team-spec">Têtes plates</span><span class="team-spec">Kiné respiratoire</span></div>
+        <div class="team-specs">
+          <span class="team-spec">Périnée & abdos</span>
+          <span class="team-spec">Têtes plates</span>
+          <span class="team-spec">Kiné respiratoire</span>
+        </div>
         <div class="team-passions"><span class="team-passion-label">Passions :</span> Plongée 🤿 · Théâtre 🎭 · Chocolat 🍫 · Champagne 🥂</div>
-        
       </div>
+
       <div class="team-card fade-in">
         <div class="team-photo">
           <img src="images/leslie.jpg" alt="Leslie" loading="lazy">
@@ -714,21 +754,29 @@
         <div class="team-name">Leslie</div>
         <span class="team-role">Kinésithérapeute</span>
         <div class="team-since">Diplômée depuis 2022</div>
-        <div class="team-specs"><span class="team-spec">Épaule au Top</span><span class="team-spec">École du dos</span></div>
+        <div class="team-specs">
+          <span class="team-spec">Épaule au Top</span>
+          <span class="team-spec">École du dos</span>
+        </div>
         <div class="team-passions"><span class="team-passion-label">Passions :</span> Lecture 📚 · Randonnée 🏔️ · Voyage ✈️ · Sensations fortes 🪂</div>
-        
       </div>
+
       <div class="team-card fade-in">
         <div class="team-photo">
-          <img src="images/lea.jpg" alt="Léa" loading="lazy">
+          <img src="images/léa.jpg" alt="Léa" loading="lazy">
         </div>
         <div class="team-name">Léa</div>
         <span class="team-role">Orthophoniste</span>
         <div class="team-since">Diplômée depuis 2025</div>
-        <div class="team-specs"><span class="team-spec">Oralité alimentaire</span><span class="team-spec">Troubles oro-myofonctionnels</span><span class="team-spec">Cognition mathématique</span><span class="team-spec">Pathologies neuroévolutives</span></div>
+        <div class="team-specs">
+          <span class="team-spec">Oralité alimentaire</span>
+          <span class="team-spec">Troubles oro-myofonctionnels</span>
+          <span class="team-spec">Cognition mathématique</span>
+          <span class="team-spec">Pathologies neuroévolutives</span>
+        </div>
         <div class="team-passions"><span class="team-passion-label">Passions :</span> Vélo 🚴‍♀️ · Cuisine 🍳 · Danse 💃 · Voyage ✈️ · Jeux 🎲</div>
-        
       </div>
+
       <div class="team-card fade-in">
         <div class="team-photo">
           <img src="images/pauline.jpg" alt="Pauline" loading="lazy">
@@ -736,10 +784,15 @@
         <div class="team-name">Pauline</div>
         <span class="team-role">Orthophoniste</span>
         <div class="team-since">Diplômée depuis 2006</div>
-        <div class="team-specs"><span class="team-spec">Parkinson – LSVT</span><span class="team-spec">Maladies neuro-dégénératives</span><span class="team-spec">Fentes faciales</span><span class="team-spec">Bégaiement</span></div>
+        <div class="team-specs">
+          <span class="team-spec">Parkinson – LSVT</span>
+          <span class="team-spec">Maladies neuro-dégénératives</span>
+          <span class="team-spec">Fentes faciales</span>
+          <span class="team-spec">Bégaiement</span>
+        </div>
         <div class="team-passions"><span class="team-passion-label">Passions :</span> Danse 💃 · Famille 👨‍👨‍👧‍👦 · Amis 🥳 · Manger 🍴 · Rire 😆</div>
-        
       </div>
+
     </div>
   </div>
 </section>
@@ -1079,16 +1132,8 @@
     entries.forEach(e => {
       if(e.isIntersecting) { e.target.classList.add('visible'); }
     });
-  }, { threshold: 0.05, rootMargin: "0px 0px -20px 0px" });
+  }, { threshold: 0.1 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-  // Fallback: trigger any already-visible elements after a short delay
-  setTimeout(() => {
-    document.querySelectorAll('.fade-in:not(.visible)').forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight) el.classList.add('visible');
-    });
-  }, 100);
 
   // Mobile nav
   function toggleMobile() {
